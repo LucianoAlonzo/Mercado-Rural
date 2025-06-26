@@ -1,0 +1,90 @@
+@use "variables"; 
+html,
+body {
+  min-width: 332px;    // el ancho mínimo que quieras soportar
+  overflow-x: auto;    // para permitir el scroll horizontal si el disp del usuario es mas estrecho
+}
+body {
+  background-image: url("../img/background.jpeg");
+  background-color: rgba(17, 48, 26, 0.484);
+  background-blend-mode: multiply; 
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.titulos {
+  color: variables.$color-titulos;
+}
+
+.como-ofertar {
+  color: variables.$color-white;
+}
+
+.historia {
+  color: variables.$color-white;
+}
+
+.ofertas-destacadas {
+  p {
+    color: variables.$color-white;
+  }
+}
+
+.form-label{
+  color: variables.$color-white;
+}
+
+// Tipografía
+h1, h2, h3 {
+  font-family: variables.$font-bahnschrift;
+  text-align: center;
+  margin: 20px 0;
+}
+
+h1 {
+  color: variables.$color-aqua;
+  font-size: 55px;
+}
+
+h2 {
+  color: variables.$color-titulos;
+  font-size: 33px;
+}
+
+h3 {
+  color: variables.$color-white;
+  font-size: 26px;
+}
+
+p {
+  font-size: 23px;
+  text-align: center;
+  font-family: variables.$font-poppins;
+  margin: 10px auto;
+  padding: 5px;
+  width: 90%;
+}
+
+.contenedor-valores,
+.contenedor-servicios,
+.contenedor-ofertas {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+%boton-base {
+  padding: 4px 20px;
+  font-weight: bold;
+  border-radius: 12px;
+  border: none;
+  font-family: variables.$font-poppins;
+  transition: background-color 0.3s ease;
+}

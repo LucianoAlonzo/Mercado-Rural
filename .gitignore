@@ -1,0 +1,5 @@
+#mapas de sass
+css/*.map
+#carpeta node_modules
+node_modules/
+

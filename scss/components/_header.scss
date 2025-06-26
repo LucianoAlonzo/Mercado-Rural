@@ -1,0 +1,27 @@
+@use "../base/variables";
+@use "../base/mixins" as mixins;
+
+.color-navbar {
+  background-color: variables.$color-navbar-bg;
+}
+
+.navbar-brand {
+  position: relative;
+  height: variables.$navbar-height;
+
+  img.logo {
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    height: variables.$logo-base-height;
+    transform: translateY(-50%) translateX(140%) scale(3);
+  }
+}
+
+.nav-item {
+  font-size: 18px;
+   @include mixins.transition(0.3s, ease, transform, box-shadow);
+  &:hover {
+    transform: scale(1.1);
+  }
+}

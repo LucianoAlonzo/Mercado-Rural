@@ -1,0 +1,26 @@
+@use "variables";
+
+
+@media (max-width: 768px) {
+  h1 { font-size: 45px; }
+  h2 { font-size: 28px; }
+  h3 { font-size: 24px; }
+  p  { font-size: 20px; }
+}
+
+@media (max-width: 576px) {
+  .navbar-brand {
+    img.logo {
+      position: absolute;
+      top: 40%;
+      left: 30px;
+      height: variables.$logo-base-height;
+      transform: translateY(-50%) scale(3);
+    }
+  }
+  
+  h1 { font-size: 40px; }
+  h2 { font-size: 24px; }
+  h3 { font-size: 20px; }
+  p  { font-size: 18px; }
+}

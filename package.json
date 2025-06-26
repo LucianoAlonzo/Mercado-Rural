@@ -1,0 +1,20 @@
+{
+  "name": "preentrega-alonzo",
+  "version": "1.0.0",
+  "description": "Proyecto final Coderhouse Apunta a ser una plataforma de compra/venta para productores ganaderos y agrícolas, donde se puedan ver y publicar ofertas",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LucianoAlonzo/MercadoRural.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LucianoAlonzo/MercadoRural/issues"
+  },
+  "homepage": "https://github.com/LucianoAlonzo/MercadoRural#readme"
+}
+

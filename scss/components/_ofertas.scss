@@ -1,0 +1,26 @@
+@use "../base/mixins" as mixins;
+@use "../base/variables";
+@use "../base/generales";
+
+
+.card-oferta {
+  background-color:variables.$color-navbar-bg;
+  transform: scale(1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-oferta:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.boton-oferta {
+  @extend %boton-base;
+  background-color: #cc9321;
+  color: white;
+
+  &:hover {
+    background-color: #9f6b04;
+  }
+}
+

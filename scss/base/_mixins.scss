@@ -1,0 +1,23 @@
+@use "variables" as *;      
+@use "sass:list" as list;   //módulo de Sass para manejar listas
+
+//mixin para unificar transiciones
+@mixin transition($duration: $transition-speed, $timing: ease-in-out, $props...) {
+  $transitions: ();
+  @if (list.length($props) > 0) {
+    @each $prop in $props {
+      $transition: #{$prop} #{$duration} #{$timing}; 
+      $transitions: list.append($transitions, $transition, comma);
+    }
+    transition: $transitions;
+  }
+}
+
+//mixin para centrar en flex con gap
+@mixin flex-center($dir: row, $gap: 16px) {
+  display: flex;
+  flex-direction: $dir;
+  justify-content: center;
+  align-items: center;
+  gap: $gap;
+}
