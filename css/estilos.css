@@ -19,7 +19,11 @@ body {
 }
 
 .titulos {
-  color: rgb(41, 106, 61);
+  color: rgb(255, 255, 255);
+}
+
+.lead {
+  font-size: 28px;
 }
 
 .como-ofertar {
@@ -50,7 +54,7 @@ h1 {
 }
 
 h2 {
-  color: rgb(41, 106, 61);
+  color: rgb(255, 255, 255);
   font-size: 33px;
 }
 
@@ -178,7 +182,7 @@ p {
 }
 .iconos a:hover {
   transform: scale(1.2);
-  color: rgb(41, 106, 61);
+  color: rgb(255, 255, 255);
 }
 
 /*# sourceMappingURL=estilos.css.map */
